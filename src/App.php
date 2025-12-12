@@ -3,7 +3,6 @@
 namespace ErisonWork\SlimBumpShowcase;
 
 use Slim\App as BaseApp;
-use Slim\Route;
 use Slim\Slim;
 
 if (class_exists(Slim::class)) {

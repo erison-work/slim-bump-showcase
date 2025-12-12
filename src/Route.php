@@ -2,6 +2,7 @@
 
 namespace ErisonWork\SlimBumpShowcase;
 
+use Psr\Http\Message\ResponseInterface;
 use Slim\Route as RouteBase;
 
 class Route extends RouteBase
@@ -16,6 +17,14 @@ class Route extends RouteBase
         }
 
         $return = call_user_func_array($this->getCallable(), array_values($this->getParams()));
+
+        if ($return instanceof ResponseInterface) {
+            $return->getBody()->rewind();
+            echo $return->getBody()->getContents();
+        } elseif (is_string($return)) {
+            echo $return;
+        }
+
         return (false === $return) ? false : true;
     }
 }
