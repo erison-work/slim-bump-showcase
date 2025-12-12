@@ -1,0 +1,22 @@
+{
+  "name": "erison-work/slim-bump-showcase",
+  "description": "It's a helper to support you bump slim versions",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ErisonWork\\SlimBumpShowcase\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Erison Silva",
+      "email": "slim@erison.work"
+    }
+  ],
+  "require": {
+    "php": "^7.0 || ^8.0",
+    "psr/http-message": "^1.0",
+    "slim/slim": "^2.0 || ^3.0"
+  }
+}
