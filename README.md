@@ -9,6 +9,9 @@ I have made minor modifications to return PSR7 responses to Slim actions.
 > [!TIP]
 > If you are in the process of migrating and require a version with full support for `requests` and `responses` like **slim 3**, contact me at [slim@erison.work](slim@erison.work).
 
+> [!TIP]
+> I tried to detail more in this [article](https://blog.erison.work/posts/upgrade-slim-2-to-3/).
+
 > [!CAUTION]
 > You **SHOULD NOT** use this package in production.
 
